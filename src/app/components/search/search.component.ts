@@ -17,12 +17,12 @@ export class SearchComponent {
   ) { }
 
   buscar(termino: string) {
-    console.log(termino);
+    // console.log(termino);
     
     this.loading = true;
     this.spotify.getArtistas( termino )
                 .subscribe( (data: any) => {
-                  console.log(data);
+                  // console.log(data);
                   this.artistas = data;
                   this.loading = false;
                 });
